@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Karl Håkansson">
+    <title>Bensin | LoremSite</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Temaändrare | Av Bootstrap -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check2" viewBox="0 0 16 16">
+            <path
+                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z">
+            </path>
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+        </symbol>
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path
+                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z">
+            </path>
+            <path
+                d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z">
+            </path>
+        </symbol>
+        <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path
+                d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z">
+            </path>
+        </symbol>
+    </svg>
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+            aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+            <svg class="bi my-1 theme-icon-active" aria-hidden="true">
+                <use href="#circle-half"></use>
+            </svg>
+            <span class="visually-hidden" id="bd-theme-text">Ändra tema</span>
+        </button>
+
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+                    aria-pressed="false">
+                    <svg class="bi me-2 opacity-50" aria-hidden="true">
+                        <use href="#sun-fill"></use>
+                    </svg>
+                    Ljus
+                    <svg class="bi ms-auto d-none" aria-hidden="true">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                    aria-pressed="false">
+                    <svg class="bi me-2 opacity-50" aria-hidden="true">
+                        <use href="#moon-stars-fill"></use>
+                    </svg>
+                    Mörk
+                    <svg class="bi ms-auto d-none" aria-hidden="true">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+                    aria-pressed="true">
+                    <svg class="bi me-2 opacity-50" aria-hidden="true">
+                        <use href="#circle-half"></use>
+                    </svg>
+                    Auto
+                    <svg class="bi ms-auto d-none" aria-hidden="true">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand fw-semibold" href="index.html">LoremSite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Start</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Om</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#"
+                            aria-current="page">Bilar</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cars.html">Översikt</a></li>
+                            <li><a class="dropdown-item" href="electric.html">Elbilar</a></li>
+                            <li><a class="dropdown-item active" href="petrol.html">Bensinbilar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-5">
+        <div class="container">
+            <h1 class="mb-3">Lorem Bensinbilar</h1>
+
+            <img src="https://picsum.photos/seed/bensin/1100/450" class="img-fluid rounded mb-4" alt="Lorem bild">
+
+            <div class="row g-4">
+                <div class="col-lg-7">
+                    <div class="alert alert-danger" role="alert">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+
+                    <div class="list-group mb-3">
+                        <button type="button" class="list-group-item list-group-item-action active">Lorem 1</button>
+                        <button type="button" class="list-group-item list-group-item-action">Lorem 2</button>
+                        <button type="button" class="list-group-item list-group-item-action">Lorem 3</button>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="h5">Lorem</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
+
+                            <div class="btn-group" role="group" aria-label="Lorem buttons">
+                                <button type="button" class="btn btn-outline-primary">Lorem</button>
+                                <button type="button" class="btn btn-outline-primary">Ipsum</button>
+                                <button type="button" class="btn btn-outline-primary">Dolor</button>
+                            </div>
+
+                            <div class="spinner-border ms-3" role="status" aria-label="Loading"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="card">
+                        <div class="card-header">Lorem Toast Demo</div>
+                        <div class="card-body">
+                            <p class="mb-3">Lorem ipsum dolor sit amet.</p>
+                            <button class="btn btn-dark w-100" id="toastBtn2">Show Toast</button>
+                        </div>
+                    </div>
+
+                    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                        <div id="toast2" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header">
+                                <strong class="me-auto">Lorem</strong>
+                                <small>now</small>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                    aria-label="Stäng"></button>
+                            </div>
+                            <div class="toast-body">Lorem ipsum dolor sit amet.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="container border-top py-5">
+        <div class="row">
+            <div class="col-6 col-md">
+                <h5>Lorem Ipsum</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary text-decoration-none" href="#">Lorem ipsum dolor</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Consectetur adipiscing</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Sed do eiusmod</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Tempor incididunt ut</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Labore et dolore</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Magna aliqua</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Dolor Sit Amet</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary text-decoration-none" href="#">Ut enim ad minim</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Veniam quis nostrud</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Exercitation ullamco</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Laboris nisi aliqua</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Ut Enim Ad Minim</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary text-decoration-none" href="#">Duis aute irure</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Dolor in reprehenderit</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">In voluptate velit</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Esse cillum dolore</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Eu Fugiat</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary text-decoration-none" href="#">Nulla pariatur</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Excepteur sint occaecat</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Cupidatat non proident</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Sunt in culpa</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="/assets/js/color-modes.js"></script>
+    <script>
+        const btn = document.getElementById('toastBtn2');
+        const toastEl = document.getElementById('toast2');
+        if (btn && toastEl) {
+            btn.addEventListener('click', () => {
+                bootstrap.Toast.getOrCreateInstance(toastEl).show();
+            });
+        }
+    </script>
+</body>
+
+</html>
