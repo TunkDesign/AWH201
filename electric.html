@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
     <meta name="author" content="Karl Håkansson">
     <title>Elbilar | LoremSite</title>
     <!-- Bootstrap CSS -->
@@ -97,18 +97,21 @@
     <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
         <div class="container">
             <a class="navbar-brand fw-semibold" href="index.html">LoremSite</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-label="Öppna navigeringsmeny">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="nav">
                 <ul class="navbar-nav ms-auto gap-lg-2">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Start</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Startsida</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">Om</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#"
                             aria-current="page">Bilar</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="cars.html">Översikt</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
                             <li><a class="dropdown-item active" href="electric.html">Elbilar</a></li>
                             <li><a class="dropdown-item" href="petrol.html">Bensinbilar</a></li>
                         </ul>
@@ -147,7 +150,8 @@
                             <hr>
 
                             <h2 class="h6">Lorem Range</h2>
-                            <input type="range" class="form-range" min="0" max="100" value="45">
+                            <label class="form-label" for="range1">Lorem Range</label>
+                            <input type="range" class="form-range" id="range1" min="0" max="100" value="45">
 
                             <div class="alert alert-secondary mb-0" role="alert">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
