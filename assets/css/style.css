@@ -66,3 +66,46 @@
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
 }
+
+/* "Platta till" */
+.well,
+.navbar-inner,
+.bootstrap-switch,
+.bootstrap-switch-label,
+.bootstrap-switch-handle-on,
+.bootstrap-switch-handle-off,
+.navbar,
+.jumbotron,
+.input-group-addon,
+.popover,
+.btn,
+.tooltip,
+input,
+select,
+textarea,
+pre,
+.progress,
+.form-control,
+.modal,
+.modal-content,
+.card,
+.add-on,
+.list-group,
+.accordion,
+.alert,
+.table-bordered,
+.nav>.active>a,
+.dropdown-menu,
+.tooltip-inner,
+.badge,
+.label,
+.img-polaroid {
+    -moz-box-shadow: none ;
+    -webkit-box-shadow: none ;
+    box-shadow: none ;
+    -webkit-border-radius: 0px ;
+    -moz-border-radius: 0px ;
+    border-radius: 0px ;
+    border-collapse: collapse ;
+    background-image: none ;
+}
